@@ -16,9 +16,12 @@ function Chat() {
         setSeed(Math.floor(Math.random()*5000));
            }, [] );
 
-           const sendMessage = (e) => {}
-        
-    return (
+           const sendMessage = (e) => {           e.preventDefault();
+            console.log("You typed >>> ", input);
+
+            setInput("");
+     };
+     return (
         <div className="chat">
            <div className="chat_header">
                <Avatar src={`https://avatars.dicebear.com/api/human/${seed}.svg`} />
