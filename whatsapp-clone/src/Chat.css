@@ -41,6 +41,10 @@
     overflow: scroll;
 }
 
+.chat_body > p {
+    font-size: 12px;
+}
+
 .chat_message{
     position: relative;
     font-size: 12px;
